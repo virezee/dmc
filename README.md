@@ -1,16 +1,21 @@
 ## How to Run
 
 ### Requirements
+
 - Docker
 
 ### Run
+
 `docker compose up --build`
 
 ### Access
+
 API: http://localhost:3000
+
 API Documentation (Scalar): [http://localhost:3000/docs/v1](http://localhost:3000/docs/v1)
 
 ### Stop
+
 `docker compose down`
 
 ## System Architecture
