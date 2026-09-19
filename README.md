@@ -8,12 +8,13 @@
 
 ### Access
 API: http://localhost:3000
+API Documentation (Scalar): [http://localhost:3000/docs/v1](http://localhost:3000/docs/v1)
 
 ### Stop
 `docker compose down`
 
 ## System Architecture
-
+    
 The application uses a layered architecture that separates HTTP handling, business logic, persistence, and MQTT communication.
 
                          Client

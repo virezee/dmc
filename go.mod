@@ -6,6 +6,9 @@ require (
 	github.com/eclipse/paho.mqtt.golang v1.5.1
 	github.com/go-playground/validator/v10 v10.30.4
 	github.com/gofiber/fiber/v3 v3.5.0
+	github.com/oaswrap/spec v0.5.2
+	github.com/oaswrap/spec-ui v0.2.1
+	github.com/oaswrap/spec/adapter/fiberv3openapi v0.5.2
 	github.com/rs/zerolog v1.35.1
 	modernc.org/sqlite v1.59.0
 )
@@ -15,6 +18,7 @@ require (
 	github.com/gabriel-vasile/mimetype v1.4.15 // indirect
 	github.com/go-playground/locales v0.14.1 // indirect
 	github.com/go-playground/universal-translator v0.18.1 // indirect
+	github.com/goccy/go-yaml v1.19.2 // indirect
 	github.com/gofiber/schema v1.8.7 // indirect
 	github.com/gofiber/utils/v2 v2.5.2 // indirect
 	github.com/google/uuid v1.6.0 // indirect

@@ -29,8 +29,9 @@ func NewApp(ctx context.Context, infra *Infra) *fiber.App {
 		},
 	})
 	app.Use(recover.New())
-	router.RegisterSensorRoutes(app, sensHdlr)
-	router.RegisterStatusRoutes(app, statsHdlr)
-	router.RegisterDeviceRoutes(app, devHdlr)
+	r := newSpecRouter(app)
+	router.RegisterSensorRoutes(r, sensHdlr)
+	router.RegisterStatusRoutes(r, statsHdlr)
+	router.RegisterDeviceRoutes(r, devHdlr)
 	return app
 }
