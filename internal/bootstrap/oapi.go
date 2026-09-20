@@ -30,15 +30,6 @@ func specOptions() []option.OpenAPIOption {
 		option.WithServer("http://localhost:3000",
 			option.ServerName("Local"),
 			option.ServerDescription("Local environment (developer machine).")),
-		option.WithSecurity(
-			"googleIDToken",
-			option.SecurityOpenIDConnect(
-				"https://accounts.google.com/.well-known/openid-configuration",
-			),
-		),
-		option.WithSecurity("bearerAuth", option.SecurityHTTPBearer("Bearer")),
-		option.WithSecurity("refreshCookie",
-			option.SecurityAPIKey("refresh_token", openapi.SecuritySchemeAPIKeyIn("cookie"))),
 		option.WithTags(
 			openapi.Tag{
 				Name:        "Sensor",

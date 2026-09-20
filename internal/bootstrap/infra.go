@@ -4,10 +4,11 @@ import (
 	"context"
 	"database/sql"
 
+	"github.com/rs/zerolog/log"
+
 	"dmc/internal/infrastructure/database"
 	"dmc/internal/infrastructure/database/sqlc"
 	"dmc/internal/infrastructure/mqtt"
-	"github.com/rs/zerolog/log"
 )
 
 type Infra struct {

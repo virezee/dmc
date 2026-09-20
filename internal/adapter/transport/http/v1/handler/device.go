@@ -3,14 +3,15 @@ package httphandlerv1
 import (
 	"context"
 
+	"github.com/gofiber/fiber/v3"
+	"github.com/rs/zerolog"
+	"github.com/rs/zerolog/log"
+
 	"dmc/internal/adapter/transport/http/v1/request"
 	"dmc/internal/application/port/inbound"
 	"dmc/internal/domain/device"
 	"dmc/pkg/constants"
 	"dmc/pkg/httputil"
-	"github.com/gofiber/fiber/v3"
-	"github.com/rs/zerolog"
-	"github.com/rs/zerolog/log"
 )
 
 type DeviceHandler struct {

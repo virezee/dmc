@@ -3,11 +3,12 @@ package httputil
 import (
 	"context"
 
-	"dmc/pkg/cryptox"
-	"dmc/pkg/response"
 	"github.com/gofiber/fiber/v3"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
+
+	"dmc/pkg/cryptox"
+	"dmc/pkg/response"
 
 	responsev1 "dmc/pkg/response/v1"
 )

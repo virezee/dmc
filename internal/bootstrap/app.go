@@ -3,11 +3,12 @@ package bootstrap
 import (
 	"context"
 
+	"github.com/gofiber/fiber/v3"
+	"github.com/gofiber/fiber/v3/middleware/recover"
+
 	"dmc/internal/adapter/transport/http/router"
 	"dmc/internal/application/usecase"
 	"dmc/pkg/httputil"
-	"github.com/gofiber/fiber/v3"
-	"github.com/gofiber/fiber/v3/middleware/recover"
 
 	mqttclient "dmc/internal/adapter/gateway/mqtt"
 	sqliterepo "dmc/internal/adapter/gateway/repository/sqlite"

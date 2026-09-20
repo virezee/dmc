@@ -6,9 +6,10 @@ import (
 	"reflect"
 	"strings"
 
-	"dmc/pkg/response"
 	"github.com/go-playground/validator/v10"
 	"github.com/gofiber/fiber/v3"
+
+	"dmc/pkg/response"
 
 	responsev1 "dmc/pkg/response/v1"
 )

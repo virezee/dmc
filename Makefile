@@ -1,4 +1,4 @@
-.PHONY: migrate-new migrate-hash run
+.PHONY: migrate-new migrate-hash migrate-apply run build
 migrate-new:
 	@test -n "$(NAME)" || (echo "Usage: migrate-new NAME=add_something"; exit 1)
 	GOWORK=off atlas migrate new $(NAME)

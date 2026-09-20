@@ -1,10 +1,11 @@
 package router
 
 import (
-	"dmc/internal/adapter/transport/http/v1/handler"
-	"dmc/pkg/response"
 	"github.com/oaswrap/spec/adapter/fiberv3openapi"
 	"github.com/oaswrap/spec/option"
+
+	"dmc/internal/adapter/transport/http/v1/handler"
+	"dmc/pkg/response"
 
 	requestv1 "dmc/internal/adapter/transport/http/v1/request"
 	responsev1 "dmc/pkg/response/v1"

@@ -3,11 +3,12 @@ package httphandlerv1
 import (
 	"context"
 
-	"dmc/internal/application/port/inbound"
-	"dmc/pkg/constants"
 	"github.com/gofiber/fiber/v3"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
+
+	"dmc/internal/application/port/inbound"
+	"dmc/pkg/constants"
 
 	responsev1 "dmc/pkg/response/v1"
 )

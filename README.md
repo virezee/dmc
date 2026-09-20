@@ -22,6 +22,7 @@ API Documentation (Scalar): [http://localhost:3000/docs/v1](http://localhost:300
     
 The application uses a layered architecture that separates HTTP handling, business logic, persistence, and MQTT communication.
 
+```
                          Client
                            |
                            v
@@ -43,6 +44,7 @@ The application uses a layered architecture that separates HTTP handling, busine
                                       |
                                       v
                               Greenhouse Device
+```
 
 The software architecture/architectural pattern uses a hybrid architecture combining Domain-Driven Design (DDD) principles, Hexagonal Architecture (Ports and Adapters), and Clean Architecture.
 
@@ -52,6 +54,7 @@ This separation keeps business logic independent from external infrastructure an
 
 ### Sensor Data Flow
 
+```
   Client / IoT System
           |
           | POST /sensor-data
@@ -66,29 +69,32 @@ This separation keeps business logic independent from external infrastructure an
           |
           v
     SQLite Database
+```
 
 The /sensor-data endpoint validates the incoming payload and stores the sensor data in SQLite.
 
 ### Device Control Flow
 
-    Client
-      |
-      | POST /device-control
-      v
-  HTTP Handler
-      |
-      v
-   Use Case
-      |
-      v
-  MQTT Client
-      |
-      | Publish
-      v
-  MQTT Broker
-      |
-      v
+```
+      Client
+        |
+        | POST /device-control
+        v
+   HTTP Handler
+        |
+        v
+     Use Case
+        |
+        v
+   MQTT Client
+        |
+        | Publish
+        v
+   MQTT Broker
+        |
+        v
 Greenhouse Device
+```
 
 ## MQTT Integration
 

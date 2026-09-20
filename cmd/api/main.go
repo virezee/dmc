@@ -6,10 +6,11 @@ import (
 	"syscall"
 	"time"
 
-	"dmc/internal/bootstrap"
-	"dmc/pkg/logger"
 	"github.com/gofiber/fiber/v3"
 	"github.com/rs/zerolog/log"
+
+	"dmc/internal/bootstrap"
+	"dmc/pkg/logger"
 )
 
 func main() {
