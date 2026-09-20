@@ -38,5 +38,5 @@ func (h *DeviceHandler) SendCommand(c fiber.Ctx) error {
 	}); err != nil {
 		return httputil.InternalServerErrorWithLoggerErr(l, c, err)
 	}
-	return c.SendStatus(fiber.StatusNoContent)
+	return c.SendStatus(fiber.StatusAccepted)
 }

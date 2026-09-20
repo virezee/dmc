@@ -30,10 +30,10 @@ func deviceDoc() []option.OperationOption {
 			option.ContentRequired(),
 		),
 		option.Response(
-			204,
+			202,
 			nil,
 			option.ContentDescription(
-				"The command was successfully published to the MQTT broker.",
+				"The command was successfully published to the MQTT broker. This does not confirm that the device received or executed the command.",
 			),
 		),
 		option.Response(
